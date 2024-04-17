@@ -1,8 +1,6 @@
 
 const Footer = () => {
-  return (
-    <div>Footer</div>
-  )
+  return <div className="bg-[#e1eaf1]">Footer</div>;
 }
 
 export default Footer

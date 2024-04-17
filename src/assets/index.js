@@ -5,6 +5,6 @@ export const headerLinks = [
   "live fish",
   "|",
   "kits",
-  "tanks $ accessories",
+  "tanks & accessories",
   "blog" ,"contact"
 ] 

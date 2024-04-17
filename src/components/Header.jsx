@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { headerLinks, logo } from "../assets";
-import { IoMenuOutline, IoSearchOutline } from 'react-icons/io5';
+import { IoSearchOutline } from 'react-icons/io5';
 import { MdOutlineShoppingBag } from 'react-icons/md';
 import { TbGridDots } from 'react-icons/tb';
+import { Menu } from "../subComponent";
 
 const Header = () => {
   return (
@@ -24,28 +25,7 @@ const Header = () => {
         <TbGridDots />
       </div>
       {/* MOBILE MENU */}
-      <div className="dropdown dropdown-end lg:hidden">
-        <div tabIndex={0} role="button" className="btn text-4xl m-1">
-          <IoMenuOutline />
-        </div>
-        <ul
-          tabIndex={0}
-          className="dropdown-content gap-3 z-[1] menu p-2 shadow bg-white border-b-2 border-black  w-[93vw] rounded-sm"
-        >
-          {headerLinks.map((li) => {
-            return (
-              <li key={li} className={`${li === '|' ? 'hidden' : ''} text-md`}>
-                {li}
-              </li>
-            );
-          })}
-          <div className="w-1/2 flex justify-between items-center text-[#222] text-2xl  mt-3 font-man font-extralight">
-            <IoSearchOutline />
-            <MdOutlineShoppingBag />
-            <TbGridDots />
-          </div>
-        </ul>
-      </div>
+      <Menu/>
     </div>
   );
 }
