@@ -1,8 +1,14 @@
+import { Outlet } from "react-router-dom";
+import { Footer, Header } from "../components";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
+    <>
+      <Header />
+      <Outlet/>
+      <Footer/>
+    </>
+  );
 }
 
 export default Home
