@@ -8,3 +8,17 @@ export const headerLinks = [
   "tanks & accessories",
   "blog" ,"contact"
 ] 
+export const footerShop =
+  {
+    title: 'shop',
+    list: ['Shop Live Plants', 'Shop Live Fish', 'Shop Hardscape'],
+  }
+export const footerCompany =
+  {
+    title: 'company',
+    list: ['about us', 'contact us', 'career'],
+  }
+export const footerAddress = {
+  title: 'Address',
+  list: ['123 Some St Name Tampa, FL USA 33605'],
+};

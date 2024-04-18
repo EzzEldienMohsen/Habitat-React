@@ -25,7 +25,7 @@ const Header = () => {
         <TbGridDots />
       </div>
       {/* MOBILE MENU */}
-      <Menu/>
+      <Menu />
     </div>
   );
 }
