@@ -1,4 +1,5 @@
 export {default as Menu} from "./Menu"
+export {default as LandingHero} from "./LandingHero"
 export {default as FooterFirstColumn} from "./FooterFirstColumn"
 export {default as FooterLinks} from "./FooterLinks"
 export {default as SecondFooter} from "./SecondFooter"

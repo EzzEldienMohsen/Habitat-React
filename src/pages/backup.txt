@@ -1,0 +1,21 @@
+const productsQuery = (file,page)=>{
+ 
+  return {
+    queryKey: ['all', file, page],
+    queryFn: () => autoFetch(`/${file}/${page}.json`),
+  };
+}
+export const loader =
+  (queryCLient) =>
+  async ({ params }) => {
+    let file = "all";
+    let page=1;
+    if (params) {
+      console.log(params);
+      file = params.file;
+      page = params.page;
+    }
+    const data = await queryCLient.ensureQueryData(productsQuery(file,page));
+console.log(data)
+    return data;
+  };
