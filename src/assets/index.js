@@ -22,3 +22,25 @@ export const footerAddress = {
   title: 'Address',
   list: ['123 Some St Name Tampa, FL USA 33605'],
 };
+export const filterLinks = [
+  {
+    text:"All",
+    to:"/"
+  },
+  {
+    text:"Rocks",
+    to:"/rocks/1.json"
+  },
+  {
+    text:"Roots",
+    to:"/roots/1.json"
+  },
+  {
+    text:"Soil",
+    to:"/soil/1.json"
+  },
+  {
+    text:"Tanks",
+    to:"/tanks/1.json"
+  },
+]
