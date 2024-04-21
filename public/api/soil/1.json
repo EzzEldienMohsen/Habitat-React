@@ -1,0 +1,162 @@
+[
+  {
+    "id": 12,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120e64009800d2e80fd_hardscape-8.jpg",
+    "name": "product name",
+    "type": "soil",
+    "price": 390,
+    "cat": "soil"
+  },
+  {
+    "id": 13,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201000ff5564892ddb_hardscape-3.jpg",
+    "name": "product name",
+    "type": "soil",
+    "price": 190,
+    "cat": "soil"
+  },
+  {
+    "id": 14,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631209b6169e250e9377b_hardscape-6.jpg",
+    "name": "product name",
+    "type": "soil",
+    "price": 590,
+    "cat": "soil"
+  },
+  {
+    "id": 19,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg",
+    "name": "product name",
+    "type": "original",
+    "price": 1500,
+    "cat": "soil"
+  },
+  {
+    "id": 20,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg",
+    "name": "product name",
+    "type": "original",
+    "price": 150,
+    "cat": "soil"
+  },
+  {
+    "id": 33,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120e64009800d2e80fd_hardscape-8.jpg",
+    "name": "product name",
+    "type": "soil",
+    "price": 390,
+    "cat": "soil"
+  },
+  {
+    "id": 34,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201000ff5564892ddb_hardscape-3.jpg",
+    "name": "product name",
+    "type": "soil",
+    "price": 190,
+    "cat": "soil"
+  },
+  {
+    "id": 35,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631209b6169e250e9377b_hardscape-6.jpg",
+    "name": "product name",
+    "type": "soil",
+    "price": 590,
+    "cat": "soil"
+  },
+  {
+    "id": 40,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg",
+    "name": "product name",
+    "type": "original",
+    "price": 1500,
+    "cat": "soil"
+  },
+  {
+    "id": 41,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg",
+    "name": "product name",
+    "type": "original",
+    "price": 150,
+    "cat": "soil"
+  },
+  {
+    "id": 53,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120e64009800d2e80fd_hardscape-8.jpg",
+    "name": "product name",
+    "type": "soil",
+    "price": 390,
+    "cat": "soil"
+  },
+  {
+    "id": 54,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201000ff5564892ddb_hardscape-3.jpg",
+    "name": "product name",
+    "type": "soil",
+    "price": 190,
+    "cat": "soil"
+  },
+  {
+    "id": 55,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631209b6169e250e9377b_hardscape-6.jpg",
+    "name": "product name",
+    "type": "soil",
+    "price": 590,
+    "cat": "soil"
+  },
+  {
+    "id": 60,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg",
+    "name": "product name",
+    "type": "original",
+    "price": 1500,
+    "cat": "soil"
+  },
+  {
+    "id": 61,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg",
+    "name": "product name",
+    "type": "original",
+    "price": 150,
+    "cat": "soil"
+  },
+  {
+    "id": 74,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120e64009800d2e80fd_hardscape-8.jpg",
+    "name": "product name",
+    "type": "soil",
+    "price": 390,
+    "cat": "soil"
+  },
+    {
+        "id":75,
+        "img":"https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201000ff5564892ddb_hardscape-3.jpg",
+        "name":"product name",
+        "type":"soil",
+        "price":190,
+        "cat":"soil"
+    },
+    {
+        "id":76,
+        "img":"https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631209b6169e250e9377b_hardscape-6.jpg",
+        "name":"product name",
+        "type":"soil",
+        "price":590,
+        "cat":"soil"
+    },
+    {
+        "id":81,
+        "img":"https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg",
+        "name":"product name",
+        "type":"original",
+        "price":1500,
+        "cat":"soil"
+    },
+    {
+        "id":82,
+        "img":"https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg",
+        "name":"product name",
+        "type":"original",
+        "price":150,
+        "cat":"soil"
+    }
+]

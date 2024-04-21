@@ -1,0 +1,162 @@
+[
+  {
+    "id": 20,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg",
+    "name": "product name",
+    "type": "original",
+    "price": 150,
+    "cat": "soil"
+  },
+  {
+    "id": 21,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b6312033f7202efdfa2102_hardscape-1.jpg",
+    "name": "product name",
+    "type": "variant",
+    "price": 55,
+    "cat": "rock"
+  },
+  {
+    "id": 22,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg",
+    "name": "product name",
+    "type": "original",
+    "price": 60,
+    "cat": "rock"
+  },
+  {
+    "id": 23,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201000ff5564892ddb_hardscape-3.jpg",
+    "name": "product name",
+    "type": "variant",
+    "price": 44,
+    "cat": "rock"
+  },
+  {
+    "id": 24,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631202684815bd7f9439b_hardscape-4.jpg",
+    "name": "product name",
+    "type": "variant",
+    "price": 144,
+    "cat": "root"
+  },
+  {
+    "id": 25,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120bbb02530b2aacd7c_hardscape-5.jpg",
+    "name": "product name",
+    "type": "original",
+    "price": 235,
+    "cat": "root"
+  },
+  {
+    "id": 26,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631209b6169e250e9377b_hardscape-6.jpg",
+    "name": "product name",
+    "type": "manufacture",
+    "price": 25,
+    "cat": "tank"
+  },
+  {
+    "id": 27,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120e64009800d2e80fd_hardscape-8.jpg",
+    "name": "product name",
+    "type": "manufacture",
+    "price": 30,
+    "cat": "tank"
+  },
+  {
+    "id": 28,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120e64009800d2e80fd_hardscape-8.jpg",
+    "name": "Dual Vital Purifying Cleanser",
+    "type": "manufacture",
+    "price": 70,
+    "cat": "tank"
+  },
+  {
+    "id": 29,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b6312033f7202efdfa2102_hardscape-1.jpg",
+    "name": "product name",
+    "type": "volcanic",
+    "price": 88,
+    "cat": "rock"
+  },
+  {
+    "id": 30,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631202684815bd7f9439b_hardscape-4.jpg",
+    "name": "product name",
+    "type": "wild",
+    "price": 317,
+    "cat": "root"
+  },
+  {
+    "id": 31,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201ffc4df17ea2bd54_hardscape-2.jpg",
+    "name": "product name",
+    "type": "Gemstone",
+    "price": 1250,
+    "cat": "rock"
+  },
+  {
+    "id": 32,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120bbb02530b2aacd7c_hardscape-5.jpg",
+    "name": "product name",
+    "type": "forest",
+    "price": 790,
+    "cat": "root"
+  },
+  {
+    "id": 33,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120e64009800d2e80fd_hardscape-8.jpg",
+    "name": "product name",
+    "type": "soil",
+    "price": 390,
+    "cat": "soil"
+  },
+  {
+    "id": 34,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631201000ff5564892ddb_hardscape-3.jpg",
+    "name": "product name",
+    "type": "soil",
+    "price": 190,
+    "cat": "soil"
+  },
+  {
+    "id": 35,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631209b6169e250e9377b_hardscape-6.jpg",
+    "name": "product name",
+    "type": "soil",
+    "price": 590,
+    "cat": "soil"
+  },
+  {
+    "id": 36,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120e64009800d2e80fd_hardscape-8.jpg",
+    "name": "Dual Vital Purifying Cleanser",
+    "type": "manufacture",
+    "price": 40,
+    "cat": "tank"
+  },
+  {
+    "id": 37,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631202684815bd7f9439b_hardscape-4.jpg",
+    "name": "product name",
+    "type": "medicine",
+    "price": 3450,
+    "cat": "root"
+  },
+  {
+    "id": 38,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120bbb02530b2aacd7c_hardscape-5.jpg",
+    "name": "product name",
+    "type": "original",
+    "price": 150,
+    "cat": "root"
+  },
+  {
+    "id": 39,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b6312033f7202efdfa2102_hardscape-1.jpg",
+    "name": "product name",
+    "type": "original",
+    "price": 150,
+    "cat": "rock"
+  }
+]
