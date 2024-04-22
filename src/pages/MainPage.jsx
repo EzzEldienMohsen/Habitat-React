@@ -3,6 +3,7 @@ import { Pagination, Products } from '../subComponent';
 import { autoFetch } from '../utils';
 
 var p;
+var theFile;
 const productsQuery = (file, page) => {
    
   return {
@@ -19,6 +20,9 @@ export const loader =
     if(file==="all"){
         p=6;
     }else{p=2}
+    if(file){
+      theFile=file
+    }else{theFile==="all"}
     console.log(params)
     const data = await queryCLient.ensureQueryData(productsQuery(file, page));
     console.log(data)
@@ -27,13 +31,12 @@ export const loader =
 
 const MainPage = () => {
   const {data} = useLoaderData()
-  console.log(data)
   return (
     <div className="bg-[white] flex flex-col">
       {/* PRODUCTS COMPONENT */}
      <Products data={data}/>
      {/* PAGINATION */}
-     <Pagination file="all" pageNu={p}/>
+     <Pagination file={theFile} pageNu={p}/>
     </div>
   );
 }

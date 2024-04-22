@@ -26,7 +26,7 @@ const pageCount = pageNu
         <button
           className="btn btn-xs sm:btn-md join-item"
           onClick={() => {
-            var prevPage = thePage - 1;
+            var prevPage = parseInt(thePage) - 1;
             if (prevPage < 1) prevPage = pageCount;
             handlePageChange(prevPage);
           }}
@@ -49,8 +49,8 @@ const pageCount = pageNu
         <button
           className="btn btn-xs sm:btn-md join-item"
           onClick={() => {
-            var nextPage = thePage + 1;
-            if (nextPage > pageCount) nextPage = 1;
+            let nextPage = parseInt(thePage) + 1;
+            if (nextPage > pageCount){ nextPage = 1;}
             handlePageChange(nextPage);
           }}
         >
