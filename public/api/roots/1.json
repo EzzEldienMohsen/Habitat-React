@@ -95,7 +95,7 @@
     "price": 150,
     "cat": "root"
   },
-  
+
   {
     "id": 45,
     "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120bbb02530b2aacd7c_hardscape-5.jpg",
@@ -150,6 +150,14 @@
     "name": "product name",
     "type": "original",
     "price": 235,
+    "cat": "root"
+  },
+  {
+    "id": 71,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631202684815bd7f9439b_hardscape-4.jpg",
+    "name": "product name",
+    "type": "wild",
+    "price": 317,
     "cat": "root"
   }
 ]
