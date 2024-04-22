@@ -13,7 +13,7 @@ const Products = ({data}) => {
       dispatch(addToWishList({ product }));
     };
   return (
-    <div className="my-4 px-4 flex flex-col justify-center items-center md:justify-between md:flex md:flex-row md:flex-wrap md:gap-4 ">
+    <div className="my-4 px-4 flex flex-col justify-center items-center md:justify-start md:flex md:flex-row md:flex-wrap md:gap-4  lg:gap-10 ">
         {data.map((prod) => {
           const wishListProduct = {
             name: prod.name,
@@ -25,7 +25,7 @@ const Products = ({data}) => {
           };
           return (
             <Link key={prod.id}>
-              <div className="relative w-72  px-4 shadow-2xl bg-[#f7f5eb] rounded-t-md flex flex-col my-4 md:my-0 justify-start items-start ">
+              <div className="relative md:w-72 lg:w-80  px-4 shadow-lg bg-[#f7f5eb] rounded-t-md flex flex-col my-4 md:my-0 justify-start items-start ">
                 <button
                   className={`absolute btn-ghost bg-transparent top-0 right-0 btn btn-circle ${ (isSelected === prod.id) ? 'text-[#ef436ee9]' : 'text-black'} text-3xl`}
                   onClick={() => {

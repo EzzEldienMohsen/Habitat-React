@@ -1,6 +1,6 @@
 import { useLoaderData } from 'react-router-dom';
 import { autoFetch } from './../utils/index';
-import { Products } from '../subComponent';
+import { Pagination, Products } from '../subComponent';
 
 const productsQuery = () => {
   return {
@@ -12,6 +12,7 @@ export const loader =
   (queryCLient) =>
   async () => {
     const data = await queryCLient.ensureQueryData(productsQuery());
+    console.log(data)
     return data;
   };
 
@@ -21,6 +22,8 @@ const Landing = () => {
     <div className="bg-[white] flex flex-col">
       {/* PRODUCTS COMPONENT */}
      <Products data={data}/>
+     {/* PAGINATION */}
+     <Pagination file="all"/>
     </div>
   );
 }
