@@ -1,5 +1,6 @@
-import { LandingHero } from "../subComponent";
+import { useLoaderData } from 'react-router-dom';
 import { autoFetch } from './../utils/index';
+import { Products } from '../subComponent';
 
 const productsQuery = () => {
   return {
@@ -10,18 +11,16 @@ const productsQuery = () => {
 export const loader =
   (queryCLient) =>
   async () => {
-   
     const data = await queryCLient.ensureQueryData(productsQuery());
-    console.log(data);
     return data;
   };
 
 const Landing = () => {
+  const {data} = useLoaderData()
   return (
     <div className="bg-[white] flex flex-col">
-    {/* Landing Hero */}
-    <LandingHero/>
-    
+      {/* PRODUCTS COMPONENT */}
+     <Products data={data}/>
     </div>
   );
 }

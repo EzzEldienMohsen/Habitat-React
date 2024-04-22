@@ -15,10 +15,11 @@ const wishListSlice = createSlice({
     reducers:{
         addItem:(state,action)=>{
             const {product} =action.payload
-            const items = state.wishListItems.find((i)=>i.wishListId === product.wishListId);
+            const items = state.wishListItems.find((i)=>i.id === product.id);
             if(items){
                 toast.success("Item is already in Wish List")
             }else{
+                state.wishListItems.push(product);
                 toast.success("Item is added to Wish list");
             }
         },
@@ -27,8 +28,8 @@ const wishListSlice = createSlice({
             return defaultItems
         },
         removeItem:(state,action)=>{
-            const {wishListId}= action.payload;
-            state.wishListItems = state.wishListItems.filter((i)=>i.wishListId !== wishListId);
+            const {id}= action.payload;
+            state.wishListItems = state.wishListItems.filter((i)=>i.id !== id);
                   toast.error('item is removed from your wishList');
 
         }
