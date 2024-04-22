@@ -15,7 +15,7 @@ const Header = () => {
       {/* Middle NavBar */}
       <ul className="hidden lg:flex gap-4 justify-between items-center text-md text-[#222] text-md font-man font-extralight capitalize">
         {headerLinks.map((li) => {
-          return <li key={li}>{li}</li>;
+          return <Link key={li} to={`/${li}/1`}>{li}</Link>;
         })}
       </ul>
       {/* Icons */}
