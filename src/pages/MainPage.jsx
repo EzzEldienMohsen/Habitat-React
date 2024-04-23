@@ -1,6 +1,7 @@
 import { useLoaderData } from 'react-router-dom';
 import { Pagination, Products, ProductsTitle } from '../subComponent';
 import { autoFetch } from '../utils';
+import { SecondHeader } from '../components';
 
 var p;
 var theFile;
@@ -32,6 +33,9 @@ export const loader =
 const MainPage = () => {
   const {data} = useLoaderData()
   return (
+    <>
+{/* SECOND HEADER */}
+    <SecondHeader/>
     <div className="bg-[white] flex flex-col">
       {/* PRODUCTS TITLE */}
       <ProductsTitle />
@@ -40,6 +44,7 @@ const MainPage = () => {
       {/* PAGINATION */}
       <Pagination file={theFile} pageNu={p} />
     </div>
+    </>
   );
 }
 

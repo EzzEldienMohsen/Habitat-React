@@ -21,7 +21,7 @@ const pageCount = pageNu
   if (pageCount < 2) return null;
 
   return (
-    <div className="mt-16 flex justify-end">
+    <div className="mt-16 mb-2 flex justify-end">
       <div className="join">
         <button
           className="btn btn-xs sm:btn-md join-item"

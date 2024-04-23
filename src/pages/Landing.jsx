@@ -1,6 +1,7 @@
 import { useLoaderData } from 'react-router-dom';
 import { autoFetch } from './../utils/index';
 import { Pagination, Products, ProductsTitle } from '../subComponent';
+import { SecondHeader } from '../components';
 
 const productsQuery = () => {
   return {
@@ -19,6 +20,9 @@ export const loader =
 const Landing = () => {
   const {data} = useLoaderData()
   return (
+     <>
+{/* SECOND HEADER */}
+    <SecondHeader/>
     <div className="bg-[white] flex flex-col">
     {/* PRODUCTS TITLE */}
     <ProductsTitle/>
@@ -27,6 +31,7 @@ const Landing = () => {
      {/* PAGINATION */}
      <Pagination file="all"/>
     </div>
+    </>
   );
 }
 
