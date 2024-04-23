@@ -9,9 +9,9 @@ const AboutHero = () => {
        <img
           src="https://assets-global.website-files.com/62b5e26a99a06f072c51d127/62b661031ffc4dc545a3cf55_crypt-large.jpg"
           alt="image"
-          className="w-96 h-96"
+          className="w-96 h-96 lg:w-2/5 "
         />
-        <p className="px-4 my-3 md:w-3/5 leading-4 space-y-4 lg:w-3/5 font-man capitalize text-md md:text-lg lg:text-xl ">
+        <p className="px-4 my-3 md:w-3/5 lg:w-1/2 leading-4 space-y-4 font-man capitalize text-md md:text-lg lg:text-xl ">
           we are specialized in all that is needed for alchemy nad
           blacksmithing. name it we have it, here you will find rocks,
           gemstones,soil and roots as well as a lot of Accessories. Lorem ipsum
