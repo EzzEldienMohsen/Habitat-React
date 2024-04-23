@@ -20,6 +20,8 @@ const wishListSlice = createSlice({
                 toast.success("Item is already in Wish List")
             }else{
                 state.wishListItems.push(product);
+                localStorage.setItem('wishList',JSON.stringify(state));
+
                 toast.success("Item is added to Wish list");
             }
         },

@@ -7,7 +7,7 @@ import { Menu } from "../subComponent";
 
 const Header = () => {
   return (
-    <div className="bg-[#f7f5eb] flex lg:justify-evenly items-center justify-between px-6 lg:px-0">
+    <div className="bg-[#f7f5eb] flex lg:justify-between items-center justify-between px-4 ">
       {/* Logo */}
       <Link to="/">
         <img src={logo} alt="img" />
