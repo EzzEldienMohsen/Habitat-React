@@ -28,7 +28,7 @@ const Card = ({data}) => {
   const cartProduct = {
     name: data.name,
     cartID: data.id,
-    img: data.id,
+    img: data.img,
     cat: data.cat,
     price: data.price,
     type: data.type,
