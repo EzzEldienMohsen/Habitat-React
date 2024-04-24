@@ -14,3 +14,4 @@ export {default as TheSingleContent} from "./TheSingleContent"
 export { default as Seperator } from './Seperator';
 export { default as Special } from './Special';
 export { default as CartItems } from './CartItems';
+export { default as CartTotals } from './CartTotals';
