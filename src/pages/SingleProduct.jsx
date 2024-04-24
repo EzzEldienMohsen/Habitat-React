@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import { autoFetch } from "../utils";
 import { Card, CareSingle, Seperator, TheSingleContent } from "../subComponent";
+import Special from './../subComponent/Special';
 
 
 
@@ -31,6 +32,8 @@ const SingleProduct = () => {
       <TheSingleContent />
       {/* Separator */}
       <Seperator/>
+      {/* Special Products */}
+      <Special/>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import {
   Products,
   ProductsTitle,
   Seperator,
+  Special,
 } from '../subComponent';
 import { autoFetch } from '../utils';
 import { SecondHeader } from '../components';
@@ -50,6 +51,8 @@ const MainPage = () => {
         <Pagination file={theFile} pageNu={p} />
         {/* Separator */}
         <Seperator />
+        {/* Special Products */}
+      <Special/>
       </div>
     </>
   );

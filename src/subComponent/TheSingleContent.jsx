@@ -2,9 +2,9 @@ import { iconQ } from '../assets';
 
 const TheSingleContent = () => {
   return (
-    <div className="">
+    <div className="my-4">
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
-        <div className="flex flex-col">
+        <div className="flex flex-col lg:w-4/6">
           <p className="text-xs md:text-sm lg:text-base text-gray-600 uppercase">
             Freshwater Aquascapes
           </p>
@@ -19,7 +19,7 @@ const TheSingleContent = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-8 lg:w-4/5">
+        <div className="flex flex-col gap-8 lg:w-5/6">
           <p className="text-sm md:text-base lg:text-lg text-gray-800">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam

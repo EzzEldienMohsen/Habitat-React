@@ -1,5 +1,4 @@
 [
-  
   {
     "id": 73,
     "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120bbb02530b2aacd7c_hardscape-5.jpg",
@@ -64,19 +63,52 @@
     "price": 3450,
     "cat": "root"
   },
-    {
-        "id":99,
-        "img":"https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120bbb02530b2aacd7c_hardscape-5.jpg",
-        "name":"product name",
-        "type":"original",
-        "price":150,
-        "cat":"root"
-    },{
-      "id": 103,
-      "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631202684815bd7f9439b_hardscape-4.jpg",
-      "name": "product name",
-      "type": "variant",
-      "price": 144,
-      "cat": "root"
-    }
+  {
+    "id": 99,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b63120bbb02530b2aacd7c_hardscape-5.jpg",
+    "name": "product name",
+    "type": "original",
+    "price": 150,
+    "cat": "root"
+  },
+  {
+    "id": 103,
+    "img": "https://assets.website-files.com/62b5e26a99a06f072c51d127/62b631202684815bd7f9439b_hardscape-4.jpg",
+    "name": "product name",
+    "type": "variant",
+    "price": 144,
+    "cat": "root"
+  },
+  {
+    "id": 104,
+    "img": "https://assets-global.website-files.com/62b5e26a99a06f072c51d127/62b604dc63491c064a99f9a5_plant2.jpg",
+    "name": "Dwarf star",
+    "type": "variant",
+    "price": 1000,
+    "cat": "root"
+  },
+  {
+    "id": 105,
+    "img": "https://assets-global.website-files.com/62b5e26a99a06f072c51d127/62b604dc7c4a18cd6a950e69_plant9.jpg",
+    "name": "Dwarf vampire",
+    "type": "original",
+    "price": 1375,
+    "cat": "root"
+  },
+  {
+    "id": 106,
+    "img": "https://assets-global.website-files.com/62b5e26a99a06f072c51d127/62b604dc7de6b23196a21433_plant3.jpg",
+    "name": "Dwarf dragon ",
+    "type": "original",
+    "price": 1550,
+    "cat": "root"
+  },
+  {
+    "id": 107,
+    "img": "https://assets-global.website-files.com/62b5e26a99a06f072c51d127/62b604ddc7d37311fd1960ed_plant7.jpg",
+    "name": "Dwarf Anubis on Rock",
+    "type": "variant",
+    "price": 2345,
+    "cat": "root"
+  }
 ]
