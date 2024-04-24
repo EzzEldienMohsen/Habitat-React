@@ -1,5 +1,10 @@
 import { useLoaderData } from 'react-router-dom';
-import { Pagination, Products, ProductsTitle } from '../subComponent';
+import {
+  Pagination,
+  Products,
+  ProductsTitle,
+  Seperator,
+} from '../subComponent';
 import { autoFetch } from '../utils';
 import { SecondHeader } from '../components';
 
@@ -34,16 +39,18 @@ const MainPage = () => {
   const {data} = useLoaderData()
   return (
     <>
-{/* SECOND HEADER */}
-    <SecondHeader/>
-    <div className="bg-[white] flex flex-col">
-      {/* PRODUCTS TITLE */}
-      <ProductsTitle />
-      {/* PRODUCTS COMPONENT */}
-      <Products data={data} />
-      {/* PAGINATION */}
-      <Pagination file={theFile} pageNu={p} />
-    </div>
+      {/* SECOND HEADER */}
+      <SecondHeader />
+      <div className="bg-[white] flex flex-col">
+        {/* PRODUCTS TITLE */}
+        <ProductsTitle />
+        {/* PRODUCTS COMPONENT */}
+        <Products data={data} />
+        {/* PAGINATION */}
+        <Pagination file={theFile} pageNu={p} />
+        {/* Separator */}
+        <Seperator />
+      </div>
     </>
   );
 }

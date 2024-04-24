@@ -1,6 +1,6 @@
 import { useLoaderData } from 'react-router-dom';
 import { autoFetch } from './../utils/index';
-import { Pagination, Products, ProductsTitle } from '../subComponent';
+import { Pagination, Products, ProductsTitle, Seperator } from '../subComponent';
 import { SecondHeader } from '../components';
 
 const productsQuery = () => {
@@ -30,6 +30,8 @@ const Landing = () => {
      <Products data={data}/>
      {/* PAGINATION */}
      <Pagination file="all"/>
+     {/* Separator */}
+      <Seperator/>
     </div>
     </>
   );

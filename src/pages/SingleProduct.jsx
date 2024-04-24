@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import { autoFetch } from "../utils";
-import { Card, CareSingle, TheSingleContent } from "../subComponent";
+import { Card, CareSingle, Seperator, TheSingleContent } from "../subComponent";
 
 
 
@@ -27,8 +27,10 @@ const SingleProduct = () => {
       <Card data={data} />
       {/* SECTION */}
       <CareSingle />
-    {/* THE LOREM CONTENT */}
-    <TheSingleContent/>
+      {/* THE LOREM CONTENT */}
+      <TheSingleContent />
+      {/* Separator */}
+      <Seperator/>
     </div>
   );
 };
