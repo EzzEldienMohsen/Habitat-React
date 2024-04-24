@@ -18,7 +18,7 @@ const ProductsTitle = () => {
                 {li}
               </Link>
               {li === selectedTab ? (
-                <motion.div className="underline h-[3px]  bg-[wheat]" layoutId="underline" />
+                <motion.div className="underline h-[3px]  bg-[darkblue]" layoutId="underline" />
               ) : null}
             </li>
           );

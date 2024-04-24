@@ -5,7 +5,7 @@ const AboutHero = () => {
       <h1 className="  px-4 font-man capitalize text-xl md:text-2xl lg:text-3xl font-light ">
         About Us
       </h1>
-      <div className="flex flex-col md:flex-row-reverse md:justify-between">
+      <div className="flex flex-col md:flex-row-reverse md:justify-between md:items-center">
        <img
           src="https://assets-global.website-files.com/62b5e26a99a06f072c51d127/62b661031ffc4dc545a3cf55_crypt-large.jpg"
           alt="image"
