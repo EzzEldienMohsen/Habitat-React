@@ -4,7 +4,7 @@ const Cart = () => {
     const {cartItems} = useSelector((state)=>state.cart)
     console.log(cartItems)
   return (
-    <div>Cart</div>
+    <div className="w-full">Cart</div>
   )
 }
 

@@ -15,7 +15,7 @@ const CareSingle = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row lg:gap-5">
+    <div className="flex px-4 flex-col lg:flex-row lg:gap-5">
       <div className="flex flex-col w-full lg:w-4/5">
         <div className="flex gap-6 border-b-2 border-[#a7a3a32f] w-full">
           {infoBtn.map((btn) => (

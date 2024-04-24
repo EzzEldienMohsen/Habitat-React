@@ -22,7 +22,7 @@ const SingleProduct = () => {
     const {data} =useLoaderData();
  
   return (
-    <div className="flex flex-col px-4 my-8">
+    <div className="flex flex-col my-8">
       {/* CARD */}
       <Card data={data} />
       {/* SECTION */}

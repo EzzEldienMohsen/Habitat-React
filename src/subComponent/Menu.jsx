@@ -2,6 +2,7 @@ import {  IoSearchOutline } from "react-icons/io5";
 import { headerLinks } from "../assets";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { TbGridDots } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -40,14 +41,20 @@ const Menu = () => {
       >
         {headerLinks.map((li) => {
           return (
-            <li key={li} className={`${li === '|' ? 'hidden' : ''} text-md`}>
+            <Link
+              key={li}
+              className={`${li === '|' ? 'hidden' : ''} text-md`}
+              to={`/${li}/1`}
+            >
               {li}
-            </li>
+            </Link>
           );
         })}
         <div className="w-1/2 flex justify-between items-center text-[#222] text-2xl  mt-3 font-man font-extralight">
           <IoSearchOutline />
-          <MdOutlineShoppingBag />
+          <Link to="/cart">
+            <MdOutlineShoppingBag />
+          </Link>
           <TbGridDots />
         </div>
       </ul>

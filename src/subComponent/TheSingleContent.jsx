@@ -2,7 +2,7 @@ import { iconQ } from '../assets';
 
 const TheSingleContent = () => {
   return (
-    <div className="my-4">
+    <div className="my-4 px-4">
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
         <div className="flex flex-col lg:w-4/6">
           <p className="text-xs md:text-sm lg:text-base text-gray-600 uppercase">

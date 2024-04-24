@@ -38,7 +38,7 @@ const Card = ({data}) => {
     dispatch(addToCart({ product: cartProduct }));
   };
   return (
-    <div className="flex flex-col md:justify-between md:gap-10 lg:gap-20 md:flex-row-reverse relative">
+    <div className="flex px-4 flex-col md:justify-between md:gap-10 lg:gap-20 md:flex-row-reverse relative">
       <button
         className={`absolute btn-ghost bg-transparent top-0 right-0 btn btn-circle ${isSelected === data.id ? 'text-[#ef436ee9]' : 'text-black'} text-3xl`}
         onClick={() => {
