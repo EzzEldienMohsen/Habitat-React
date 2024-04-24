@@ -5,14 +5,12 @@ import Products from "./Products";
 const Special = () => {
     const fetchingFn = async ()=>{
         const res =await autoFetch("/special/special.json")
-        console.log(res)
         return res
     }
     const { data, isFetching, status } = useQuery({
         queryKey:["special"],
         queryFn:fetchingFn
     })
-  console.log(data)
     return status === 'pending' || isFetching ? (
       <section className="flex justify-center items-center ">
         <span className="loading loading-spinner text-[#747bff] font-man text-7xl"></span>

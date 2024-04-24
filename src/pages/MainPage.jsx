@@ -30,9 +30,7 @@ export const loader =
     if(file){
       theFile=file
     }else{theFile==="all"}
-    console.log(params)
     const data = await queryCLient.ensureQueryData(productsQuery(file, page));
-    console.log(data)
     return data;
   };
 

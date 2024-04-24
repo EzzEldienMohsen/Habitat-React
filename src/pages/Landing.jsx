@@ -13,7 +13,6 @@ export const loader =
   (queryCLient) =>
   async () => {
     const data = await queryCLient.ensureQueryData(productsQuery());
-    console.log(data)
     return data;
   };
 

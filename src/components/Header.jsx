@@ -15,13 +15,19 @@ const Header = () => {
       {/* Middle NavBar */}
       <ul className="hidden lg:flex gap-4 justify-between items-center text-md text-[#222] text-md font-man font-extralight capitalize">
         {headerLinks.map((li) => {
-          return <Link key={li} to={`/${li}/1`}>{li}</Link>;
+          return (
+            <Link key={li} to={`/${li}/1`}>
+              {li}
+            </Link>
+          );
         })}
       </ul>
       {/* Icons */}
       <div className="hidden lg:flex justify-between items-center text-[#222] text-2xl gap-6 font-man font-extralight">
         <IoSearchOutline />
-        <MdOutlineShoppingBag />
+        <Link to="/cart">
+          <MdOutlineShoppingBag />
+        </Link>
         <TbGridDots />
       </div>
       {/* MOBILE MENU */}
