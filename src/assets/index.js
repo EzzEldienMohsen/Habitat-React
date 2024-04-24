@@ -1,6 +1,9 @@
 export const logo =
   'https://assets-global.website-files.com/62b5e26a99a06f072c51d127/62b5e8e7da868fe4307206c9_habitat-logo.svg';
-export const headerLinks = [
+
+export const iconQ =
+  'https://assets-global.website-files.com/62b5e26a99a06f072c51d127/62b6397d0fb2a2eb06aff64c_ico_guarantee.png';
+  export const headerLinks = [
   "all",
   "rocks",
   "roots",

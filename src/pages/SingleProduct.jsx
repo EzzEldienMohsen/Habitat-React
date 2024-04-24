@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import { autoFetch } from "../utils";
-import { Card, CareSingle } from "../subComponent";
+import { Card, CareSingle, TheSingleContent } from "../subComponent";
 
 
 
@@ -23,10 +23,12 @@ const SingleProduct = () => {
  
   return (
     <div className="flex flex-col px-4 my-8">
-    {/* CARD */}
-      <Card data={data}/>
-     {/* SECTION */}
-     <CareSingle/>
+      {/* CARD */}
+      <Card data={data} />
+      {/* SECTION */}
+      <CareSingle />
+    {/* THE LOREM CONTENT */}
+    <TheSingleContent/>
     </div>
   );
 };

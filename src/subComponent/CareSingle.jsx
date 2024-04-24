@@ -3,14 +3,14 @@ import { careData, detailsData, infoBtn, inst } from '../assets';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const CareSingle = () => {
-  const [isSelected, setIsSelected] = React.useState('details');
-  const [TheData, setTheData] = React.useState(careData);
+  const [isSelected, setIsSelected] = React.useState(infoBtn[0]);
+  const [TheData, setTheData] = React.useState(detailsData);
 
-  const toggleTheData = () => {
-    if (isSelected === 'details') {
-      setTheData(detailsData);
-    } else if (isSelected === 'care & maintenance') {
-      setTheData(careData);
+  const toggleTheData = (btn) => {
+    if (btn === 'details') {
+      setTheData(()=>detailsData);
+    } else if (btn === 'care & maintenance') {
+      setTheData(()=>careData);
     }
   };
 
@@ -22,8 +22,8 @@ const CareSingle = () => {
             <li key={btn} className="list-none">
               <h2
                 onClick={() => {
-                  setIsSelected(btn);
-                  toggleTheData();
+                  toggleTheData(btn);
+setIsSelected(btn);
                 }}
                 className={`text-[#1b1b1bc0] text-lg md:text-xl capitalize cursor-pointer ${
                   btn === isSelected ? 'font-bold' : ''
@@ -31,12 +31,12 @@ const CareSingle = () => {
               >
                 {btn}
               </h2>
-              {btn === isSelected && (
+              {btn === isSelected ? (
                 <motion.div
                   className="underline h-[3px] bg-[#1b1b1b]"
                   layoutId="underline"
                 />
-              )}
+              ) : null}
             </li>
           ))}
         </div>
