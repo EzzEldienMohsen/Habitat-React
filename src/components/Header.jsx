@@ -7,7 +7,7 @@ import { Menu } from "../subComponent";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-  const {cartTotal} =useSelector((state)=>state.cart)
+  const { numItemsInCart } = useSelector((state) => state.cart);
   return (
     <div className="bg-[#f7f5eb] py-2 flex lg:justify-between items-center justify-between px-4 ">
       {/* Logo */}
@@ -26,14 +26,14 @@ const Header = () => {
       </ul>
       {/* Icons */}
       <div className="hidden lg:flex justify-between items-center text-[#222] text-2xl gap-6 font-man font-extralight">
-        <IoSearchOutline className="w-12 h-12 text-[#222] font-thin"/>
+        <IoSearchOutline className="w-10 h-10 text-[#222] font-thin" />
         <Link to="/cart" className="relative">
-          <span className="absolute top-0 w-8 h-8 flex justify-center items-center right-0 btn-circle bg-[#747bff] text-black font-man font-light text-xs">
-            <span>{cartTotal}</span>
+          <span className="absolute top-0 w-6 h-6 flex justify-center items-center right-0 btn-circle bg-[#747bff] text-black font-man font-light text-xs">
+            <span>{numItemsInCart}</span>
           </span>
-          <MdOutlineShoppingBag className="w-12 h-12 text-[#222] font-thin" />
+          <MdOutlineShoppingBag className="w-10 h-10 text-[#222] font-thin" />
         </Link>
-        <TbGridDots className="w-12 h-12 text-[#222] font-thin"/>
+        <TbGridDots className="w-10 h-10 text-[#222] font-thin" />
       </div>
       {/* MOBILE MENU */}
       <Menu />

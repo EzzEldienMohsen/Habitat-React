@@ -40,7 +40,7 @@ const Card = ({data}) => {
   return (
     <div className="flex px-4 flex-col md:justify-between md:gap-10 lg:gap-20 md:flex-row-reverse relative">
       <button
-        className={`absolute btn-ghost bg-transparent top-0 right-0 btn btn-circle ${isSelected === data.id ? 'text-[#ef436ee9]' : 'text-black'} text-3xl`}
+        className={`absolute btn-ghost bg-transparent top-0 right-4 border-0 btn btn-circle ${isSelected === data.id ? 'text-[#ef436ee9]' : 'text-black'} text-3xl`}
         onClick={() => {
           setIsSelected(data.id);
           addItemToWishList({ ...wishListProduct });
@@ -48,7 +48,7 @@ const Card = ({data}) => {
       >
         <FaHeart />
       </button>
-      <img src={data.img} alt={data.name} className="mb-4 md:mb-0 lg:w-10/12" />
+      <img src={data.img} alt={data.name} className="mb-4 md:mb-0 lg:w-10/12 rounded-t-xl" />
       <div className="flex flex-col md:w-2/5 lg:w-auto">
         <h1 className="text-xl md:text-2xl lg:text-4xl mb-4 font-man font-semibold text-[#1b1b1b]">
           {data.name}
