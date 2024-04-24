@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Cart, Home, Landing, MainPage, SingleProduct } from './pages';
+import { Cart, Home, Landing, MainPage, SingleProduct, WishList } from './pages';
 import { store } from './store';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
@@ -43,6 +43,10 @@ const router = createBrowserRouter([
         path: '/cart',
         element: <Cart />,
       },
+      {
+        path: '/wishList',
+        element: <WishList />,
+      }
     ],
   },
 ]);

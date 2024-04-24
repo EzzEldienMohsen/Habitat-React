@@ -1,8 +1,8 @@
 import {  IoSearchOutline } from "react-icons/io5";
 import { headerLinks } from "../assets";
 import { MdOutlineShoppingBag } from "react-icons/md";
-import { TbGridDots } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import { FaHeart } from "react-icons/fa6";
 
 const Menu = () => {
   return (
@@ -55,7 +55,9 @@ const Menu = () => {
           <Link to="/cart">
             <MdOutlineShoppingBag />
           </Link>
-          <TbGridDots />
+          <Link to="/wishList">
+            <FaHeart />
+          </Link>
         </div>
       </ul>
     </div>

@@ -7,7 +7,8 @@ const getWishListFromLocalStore = ()=>{
 }
 
 const defaultItems ={
-    wishListItems:[]
+    wishListItems:[],
+     numItemsInWishList: 0,
 }
 const wishListSlice = createSlice({
     name:"wishList",
@@ -24,6 +25,8 @@ const wishListSlice = createSlice({
 
                 toast.success("Item is added to Wish list");
             }
+                  state.numItemsInWishList += 1;
+
         },
         clearWishList:()=>{
             localStorage.setItem("wishList",JSON.stringify(defaultItems));
