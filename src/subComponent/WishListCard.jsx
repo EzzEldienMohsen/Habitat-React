@@ -22,7 +22,7 @@ const WishListCard = () => {
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -10, opacity: 0 }}
                 transition={{ duration: 1 }}
-                className="relative w-80 px-4 lg:w-64 shadow-lg bg-[#f7f5eb] rounded-t-md flex flex-col my-4 md:my-0 justify-start items-start "
+                className="relative w-80 px-4 lg:w-70 shadow-lg bg-[#f7f5eb] rounded-t-md flex flex-col my-4 md:my-0 justify-start items-start "
               >
                 <img src={prod.img} alt={prod.cat} className=" rounded-t-md" />
                 <h2 className="text-[#1b1b1b] text-xl my-2 font-man font-light">
