@@ -109,6 +109,7 @@ const CartItems = () => {
               >
                 Remove From bag
               </button>
+              
             </motion.div>
           </AnimatePresence>
         );

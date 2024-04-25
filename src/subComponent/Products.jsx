@@ -27,8 +27,7 @@ const Products = ({data}) => {
             type: prod.type,
           };
           return (
-            <Link key={prod.id} to={`/products/${prod.id + 1}`}>
-            <AnimatePresence mode="wait">
+            <AnimatePresence key={prod.id} mode="wait">
               <motion.div
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -58,9 +57,13 @@ const Products = ({data}) => {
                 <p className="text-[#1b1b1b] text-lg my-2 font-man font-light">
                   {prod.cat}
                 </p>
+                <Link to={`/products/${prod.id + 1}`} className=' btn btn-block my-2 flex justify-center shadow-xl border-[2px] items-center'>
+                  <p className="text-[#1b1b1b] text-lg  font-man font-light">
+                   Go to product
+                  </p>
+                </Link>
               </motion.div>
-    </AnimatePresence>
-            </Link>
+            </AnimatePresence>
           );
         })}
       </div>

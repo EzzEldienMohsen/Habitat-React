@@ -1,11 +1,13 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { formatPrice } from '../utils';
+import { clearCart } from '../features/cart/CartSlice';
 
 const CartTotals = () => {
   const { cartTotal, shipping, tax, orderTotal } = useSelector(
     (state) => state.cart
   );
-
+const dispatch = useDispatch();
+const clearTheCart = ()=> dispatch(clearCart())
   return (
     <div className="flex flex-col px-4 py-2 gap-3 my-4 bg-[#f7f5eb]">
       {/* SUB TOTAL */}
@@ -28,6 +30,9 @@ const CartTotals = () => {
         <span>Order Total</span>
         <span className="font-medium">{formatPrice(orderTotal)}</span>
       </p>
+      <button onClick={clearTheCart} className=" btn btn-block my-2 flex justify-center shadow-xl border-[2px] items-center">
+        Clear Cart
+      </button>
     </div>
   );
 };
