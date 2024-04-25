@@ -10,7 +10,7 @@ const WishListCard = () => {
          dispatch(removeItem( product ));
        };
   return (
-    <div className="my-4 px-4 flex flex-col  items-start justify-start md:flex md:flex-row md:flex-wrap md:gap-4  lg:gap-10 ">
+    <div className="my-4 px-4 flex flex-col w-full items-start justify-start md:flex md:flex-row md:flex-wrap md:gap-4  lg:gap-10 ">
       {data.map((prod) => {
         return (
           <Link key={prod.id} to={`/products/${prod.id + 1}`}>
