@@ -13,7 +13,7 @@ const WishListCard = () => {
        const clearWish = ()=>dispatch(clearWishList())
   return (
     <div className="flex flex-col my-4 px-4 ">
-      <div className=" flex flex-col justify-center items-center md:justify-evenly lg:items-start lg:justify-between md:flex md:flex-row md:flex-wrap md:gap-4  lg:gap-10 ">
+      <div className=" flex flex-col justify-center items-center md:justify-evenly lg:items-start lg:justify-evenly md:flex md:flex-row md:flex-wrap md:gap-4  lg:gap-10 ">
         {data.map((prod) => {
           return (
             <AnimatePresence key={prod.id} mode="wait">

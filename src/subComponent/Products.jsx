@@ -14,7 +14,7 @@ const Products = ({data}) => {
       dispatch(addToWishList({ product }));
     };
   return (
-    <div className="my-4 px-4 flex flex-col justify-center items-center md:justify-evenly lg:justify-between  md:flex md:flex-row md:flex-wrap md:gap-4  lg:gap-10 ">
+    <div className="my-4 px-4 flex flex-col justify-center items-center md:justify-evenly lg:justify-evenly  md:flex md:flex-row md:flex-wrap md:gap-4  lg:gap-10 ">
       {data.map((prod) => {
         const wishListProduct = {
           name: prod.name,

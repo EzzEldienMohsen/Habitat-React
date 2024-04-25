@@ -20,7 +20,7 @@ const CartItems = () => {
   const { cartItems } = useSelector((state) => state.cart);
   console.log(cartItems);
   return (
-    <div className="my-4 px-4 flex flex-col justify-center items-center md:justify-evenly lg:items-start lg:justify-between md:flex md:flex-row md:flex-wrap md:gap-4  lg:gap-10 ">
+    <div className="my-4 px-4 flex flex-col justify-center items-center md:justify-evenly lg:items-start lg:justify-evenly md:flex md:flex-row md:flex-wrap md:gap-4  lg:gap-10 ">
       {cartItems.map((prod) => {
         const wishListProduct = {
           name: prod.name,
