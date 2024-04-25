@@ -15,14 +15,13 @@ const Products = ({data}) => {
     };
   return (
       <div
-       
         className="my-4 px-4 flex flex-col  items-start justify-start md:flex md:flex-row md:flex-wrap md:gap-4  lg:gap-10 "
       >
         {data.map((prod) => {
           const wishListProduct = {
             name: prod.name,
             id: prod.id,
-            img: prod.id,
+            img: prod.img,
             cat: prod.cat,
             price: prod.price,
             type: prod.type,

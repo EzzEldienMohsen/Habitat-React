@@ -8,7 +8,7 @@ import { FaHeart } from "react-icons/fa6";
 
 const Header = () => {
   const { numItemsInCart } = useSelector((state) => state.cart);
-  const { numItemsInWishList } = useSelector((state) => state.WishList);
+  const { numItemsInWishList } = useSelector((state) => state.wishList);
   return (
     <div className="bg-[#f7f5eb] py-2 flex lg:justify-between items-center justify-between px-4 ">
       {/* Logo */}
