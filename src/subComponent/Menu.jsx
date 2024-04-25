@@ -37,7 +37,7 @@ const Menu = () => {
       </div>
       <ul
         tabIndex={0}
-        className="dropdown-content gap-3 z-[1] menu p-2 shadow bg-white border-b-2 border-black  w-[93vw] rounded-sm"
+        className="dropdown-content gap-3 z-[1] menu p-4 shadow bg-white border-b-2 border-black  w-[93vw] rounded-md"
       >
         {headerLinks.map((li) => {
           return (
