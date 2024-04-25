@@ -6,7 +6,7 @@ import { footerAddress, footerCompany, footerShop } from './../assets/index';
 const Footer = () => {
  
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mt-4">
       {/* First Section */}
       <div className="bg-[#fafafa] flex flex-col lg:flex-row px-2 py-6 md:px-4 lg:px-6 justify-start lg:justify-between">
         {/* First column */}
