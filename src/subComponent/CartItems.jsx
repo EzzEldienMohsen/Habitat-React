@@ -38,7 +38,7 @@ const CartItems = () => {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -10, opacity: 0 }}
               transition={{ duration: 1 }}
-              className="relative w-80 lg:w-70 px-4 shadow-lg bg-[#f7f5eb] rounded-t-md flex flex-col my-4 md:my-0 justify-start items-start "
+              className="relative w-80 lg:w-72 px-4 shadow-lg bg-[#f7f5eb] rounded-t-md flex flex-col my-4 md:my-0 justify-start items-start "
             >
               <button
                 className={`absolute btn-ghost bg-transparent top-0 right-0 btn btn-circle ${isSelected === prod.id ? 'text-[#ef436ee9]' : 'text-black'} text-3xl`}
