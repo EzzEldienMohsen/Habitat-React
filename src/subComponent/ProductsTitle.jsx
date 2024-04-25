@@ -4,7 +4,10 @@ import React from "react";
 import { motion } from 'framer-motion';
 
 const ProductsTitle = () => {
-    const [selectedTab,setSelectedTab] = React.useState("all")
+    const [selectedTab, setSelectedTab] = React.useState(
+      JSON.parse(localStorage.getItem('selectedTap')) || 'all'
+    );
+    localStorage.setItem('selectedTap', JSON.stringify(selectedTab));
   return (
     <div className="flex flex-col px-4 justify-center items-center mt-4">
       <h1 className="   font-man capitalize text-xl md:text-2xl lg:text-3xl font-light ">
