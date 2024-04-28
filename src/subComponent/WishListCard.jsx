@@ -58,7 +58,7 @@ const WishListCard = () => {
       </div>
       <button
         onClick={clearWish}
-        className=" btn btn-block my-4 flex justify-center shadow-xl border-[2px] items-center"
+        className="btn btn-block my-4 flex justify-center shadow-xl border-[2px] items-center"
       >
         Clear WishList
       </button>

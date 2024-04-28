@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
 import { Link } from 'react-router-dom';
 import { addItem as addToWishList } from '../features/wishlist/WishListSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { FaHeart } from 'react-icons/fa6';
 import { formatPrice } from '../utils';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Products = ({data}) => {
-    const [isSelected, setIsSelected] = React.useState();
+    const { wishListItems } = useSelector((state) => state.wishList);
+
     const dispatch = useDispatch();
     const addItemToWishList = (product) => {
       dispatch(addToWishList({ product }));
@@ -24,6 +24,7 @@ const Products = ({data}) => {
           price: prod.price,
           type: prod.type,
         };
+          const items = wishListItems.find((i)=>i.id==prod.id)
         return (
           <AnimatePresence key={prod.id} mode="wait">
             <motion.div
@@ -34,9 +35,8 @@ const Products = ({data}) => {
               className="relative w-80 lg:w-72 px-4 shadow-lg bg-[#f7f5eb] rounded-t-md flex flex-col my-4 md:my-0 justify-start items-start "
             >
               <button
-                className={`absolute btn-ghost bg-transparent top-0 right-0 btn btn-circle ${isSelected === prod.id ? 'text-[#ef436ee9]' : 'text-black'} text-3xl`}
+                className={`absolute btn-ghost bg-transparent top-0 right-0 btn btn-circle ${items?.id === prod.id ? 'text-[#ef436ee9]' : 'text-black'} text-3xl`}
                 onClick={() => {
-                  setIsSelected(prod.id);
                   addItemToWishList({ ...wishListProduct });
                 }}
               >
