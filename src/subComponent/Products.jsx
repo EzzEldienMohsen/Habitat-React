@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { FaHeart } from 'react-icons/fa6';
 import { formatPrice } from '../utils';
 import { motion, AnimatePresence } from 'framer-motion';
-
+import {removeItem as removeFromWishList} from "../features/wishlist/WishListSlice"
 const Products = ({data}) => {
     const { wishListItems } = useSelector((state) => state.wishList);
 
@@ -13,6 +13,9 @@ const Products = ({data}) => {
     const addItemToWishList = (product) => {
       dispatch(addToWishList({ product }));
     };
+    const removeItemFromWishList = (product)=>{
+      dispatch(removeFromWishList(product));
+    }
   return (
     <div className="my-4 px-4 flex flex-col justify-center items-center md:justify-evenly lg:justify-evenly  md:flex md:flex-row md:flex-wrap md:gap-4  lg:gap-10 ">
       {data.map((prod) => {
@@ -24,7 +27,7 @@ const Products = ({data}) => {
           price: prod.price,
           type: prod.type,
         };
-          const items = wishListItems.find((i)=>i.id==prod.id)
+          const item = wishListItems.find((i)=>i.id==prod.id)
         return (
           <AnimatePresence key={prod.id} mode="wait">
             <motion.div
@@ -35,9 +38,13 @@ const Products = ({data}) => {
               className="relative w-80 lg:w-72 px-4 shadow-lg bg-[#f7f5eb] rounded-t-md flex flex-col my-4 md:my-0 justify-start items-start "
             >
               <button
-                className={`absolute btn-ghost bg-transparent top-0 right-0 btn btn-circle ${items?.id === prod.id ? 'text-[#ef436ee9]' : 'text-black'} text-3xl`}
+                className={`absolute btn-ghost bg-transparent top-0 right-0 btn btn-circle ${item?.id === prod.id ? 'text-[#ef436ee9]' : 'text-black'} text-3xl`}
                 onClick={() => {
+                  if(item){
+                    removeItemFromWishList(prod)
+                  }else{
                   addItemToWishList({ ...wishListProduct });
+                  }
                 }}
               >
                 <FaHeart />

@@ -5,6 +5,7 @@ import { addItem as addToWishList } from '../features/wishlist/WishListSlice';
 import { FaHeart } from 'react-icons/fa6';
 import { formatPrice } from '../utils';
 import { removeItem } from '../features/cart/CartSlice';
+import { removeItem as removeFromWishList } from '../features/wishlist/WishListSlice';
 
 const CartItems = () => {
   const { wishListItems } = useSelector((state) => state.wishList);
@@ -12,24 +13,27 @@ const CartItems = () => {
   const addItemToWishList = (product) => {
     dispatch(addToWishList({ product }));
   };
-
+ const removeItemFromWishList = (product) => {
+   dispatch(removeFromWishList(product));
+ };
   const removeItemsFromCart = (prod) => {
     dispatch(removeItem(prod));
   };
   const { cartItems } = useSelector((state) => state.cart);
-  console.log(cartItems);
   return (
     <div className="my-4 px-4 flex flex-col justify-center items-center md:justify-evenly lg:items-start lg:justify-evenly md:flex md:flex-row md:flex-wrap md:gap-4  lg:gap-10 ">
       {cartItems.map((prod) => {
         const wishListProduct = {
           name: prod.name,
-          id: prod.id,
-          img: prod.id,
+          id: prod.cartID,
+          img: prod.img,
           cat: prod.cat,
           price: prod.price,
           type: prod.type,
         };
-        const items = wishListItems.find((i)=>i.id===prod.id)
+        const item = wishListItems.find((i)=>i.id===prod.cartID)
+        console.log("item =>", item)
+        console.log("Prod =>", prod)
         return (
           <AnimatePresence key={prod.cartID} mode="wait">
             <motion.div
@@ -40,9 +44,13 @@ const CartItems = () => {
               className="relative w-80 lg:w-72 px-4 shadow-lg bg-[#f7f5eb] rounded-t-md flex flex-col my-4 md:my-0 justify-start items-start "
             >
               <button
-                className={`absolute btn-ghost bg-transparent top-0 right-0 btn btn-circle ${items?.id === prod.id ? 'text-[#ef436ee9]' : 'text-black'} text-3xl`}
+                className={`absolute btn-ghost bg-transparent top-0 right-0 btn btn-circle ${item?.id === prod.cartID ? 'text-[#ef436ee9]' : 'text-black'} text-3xl`}
                 onClick={() => {
-                  addItemToWishList({ ...wishListProduct });
+                  if (item) {
+                    removeItemFromWishList({id:prod.cartID});
+                  } else {
+                    addItemToWishList({ ...wishListProduct });
+                  }
                 }}
               >
                 <FaHeart />
