@@ -27,18 +27,18 @@ const Header = () => {
       </ul>
       {/* Icons */}
       <div className="hidden lg:flex justify-between items-center text-[#222] text-2xl gap-6 font-man font-extralight">
-        <IoSearchOutline className="w-10 h-10 text-[#222] font-thin" />
+        <IoSearchOutline className="w-8 mt-1 h-8 text-[#222] font-thin" />
         <Link to="/cart" className="relative">
-          <span className="absolute top-0 w-6 h-6 flex justify-center items-center right-0 btn-circle bg-[#747bff] text-black font-man font-light text-xs">
+          <span className="absolute top-0 w-6 h-6 flex justify-center items-center -right-1 btn-circle bg-[#747bff] text-black font-man font-light text-xs">
             <span>{numItemsInCart}</span>
           </span>
-          <MdOutlineShoppingBag className="w-10 h-10 text-[#222] font-thin" />
+          <MdOutlineShoppingBag className="w-8 mt-1 h-8 text-[#222] font-thin" />
         </Link>
         <Link to="/wishList" className="relative">
-          <span className="absolute top-0 w-6 h-6 flex justify-center items-center right-0 btn-circle bg-[#747bff] text-black font-man font-light text-xs">
+          <span className="absolute top-0 w-6 h-6 flex justify-center items-center -right-1 btn-circle bg-[#747bff] text-black font-man font-light text-xs">
             <span>{numItemsInWishList}</span>
           </span>
-          <FaHeart className="w-10 h-10 text-[#222] font-thin" />
+          <FaHeart className="w-8 h-8 text-[#222] font-thin mt-1" />
         </Link>
       </div>
       {/* MOBILE MENU */}
