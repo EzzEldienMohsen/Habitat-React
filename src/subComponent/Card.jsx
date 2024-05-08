@@ -1,15 +1,16 @@
 /* eslint-disable react/prop-types */
-import { amountGeneration,  formatPrice } from '../utils';
+import { amountGeneration, formatPrice } from '../utils';
 import React from 'react';
 import { addItem as addToWishList } from '../features/wishlist/WishListSlice';
 import { addItem as addToCart } from '../features/cart/CartSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { FaHeart } from 'react-icons/fa6';
+import { removeItem as removeFromWishList } from '../features/wishlist/WishListSlice';
 
-
-const Card = ({data}) => {
-  const [isSelected, setIsSelected] = React.useState();
+const Card = ({ data }) => {
   const [amount, setAmount] = React.useState(1);
+  const { wishListItems } = useSelector((state) => state.wishList);
+
   const dispatch = useDispatch();
   const addItemToWishList = (product) => {
     dispatch(addToWishList({ product }));
@@ -20,7 +21,7 @@ const Card = ({data}) => {
   const wishListProduct = {
     name: data.name,
     id: data.id,
-    img: data.id,
+    img: data.img,
     cat: data.cat,
     price: data.price,
     type: data.type,
@@ -37,18 +38,29 @@ const Card = ({data}) => {
   const addItemToCart = () => {
     dispatch(addToCart({ product: cartProduct }));
   };
+  const removeItemFromWishList = (product) => {
+    dispatch(removeFromWishList( product ));
+  };
+  const item = wishListItems.find((i) => i.id == data.id);
   return (
     <div className="flex px-4 flex-col md:justify-between md:gap-10 lg:gap-20 md:flex-row-reverse relative">
       <button
-        className={`absolute btn-ghost bg-transparent top-0 right-4 border-0 btn btn-circle ${isSelected === data.id ? 'text-[#ef436ee9]' : 'text-black'} text-3xl`}
+        className={`absolute btn-ghost bg-transparent top-0 right-4 border-0 btn btn-circle ${item?.id === data.id ? 'text-[#ef436ee9]' : 'text-black'} text-3xl`}
         onClick={() => {
-          setIsSelected(data.id);
-          addItemToWishList({ ...wishListProduct });
+          if (item) {
+            removeItemFromWishList(item);
+          } else {
+            addItemToWishList({ ...wishListProduct });
+          }
         }}
       >
         <FaHeart />
       </button>
-      <img src={data.img} alt={data.name} className="mb-4 md:mb-0 lg:w-10/12 rounded-t-xl" />
+      <img
+        src={data.img}
+        alt={data.name}
+        className="mb-4 md:mb-0 lg:w-10/12 rounded-t-xl"
+      />
       <div className="flex flex-col md:w-2/5 lg:w-auto">
         <h1 className="text-xl md:text-2xl lg:text-4xl mb-4 font-man font-semibold text-[#1b1b1b]">
           {data.name}
